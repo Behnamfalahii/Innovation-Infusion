@@ -6,18 +6,57 @@
   <title>Document</title>
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
 </head>
-<body style="background:rgb(205, 202, 202)">
-<div class="text-center" style="margin-top: 200px;">
-   <div class="btn-group">
-   <button class="btn btn-secondary" type="button">Action</button>
-   <a class="btn btn-secondary dropdown-bs-toggle" href="#" role="button" data-bs-toggle="dropdown"></a>
-      <div class="dropdown-menu">
-         <a href="#iddropdown" class="dropdown-item">atem one</a>
-         <a href="#iddropdown" class="dropdown-item">atem two</a>
-         <a href="#iddropdown" class="dropdown-item">atem three</a>
+<body style="margin: 20px;">
+<form class="needs-validation" novalidate >
+  <div class="row">
+    <div class="col-md-6"><div class="form-group">
+      <label for="username">username</label>
+      <input minlength="5" class="form-control is-valid" type="text" name="username" id="username">
+      <div class="invalid-feedback is-invalid">
+        is not difine
       </div>
-   </div>
+    </div>
+  </div>
+    <div class="col-md-6"><div class="form-group">
+      <label for="username">username</label>
+      <input required class="form-control" type="text" name="username" id="username">
+      <div class="valid-feedback">
+        looks good
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <label for="password">password</label>
+  <input class="form-control" type="text" name="password" id="password">
+  <label for="select1">Menu</label>
+<div class="form-group">
+  <div class="form-check form-check-blok">
+    <input type="radio" id="male" name="gender" class="form-check-input">
+    <label for="male" class="form-check-label">male</label>
+  </div>
+  <div class="form-check form-check-blok">
+    <input type="radio" id="female" name="gender" class="form-check-input">
+    <label for="female" class="form-check-label">female</label>
+  </div>
 </div>
+  <select class="form-control"  name="Menu" id="select1">
+    <option value="select1">1</option>
+    <option value="select1">2</option>
+    <option value="select1">3</option>
+    <option value="select1">4</option>
+  </select>
+ <label for="textarea">text area</label>
+ <textarea class="form-control-file" name="" id="textarea"></textarea>
+
+ <label for="fileinput"></label>
+ <input class="form-control-file" type="file" id="fileinput">
+  <div class="form-chek">
+    <input type="checkbox" id="accept" name="gender" class="form-chek-input">
+    <label for="accept" class="form-chek-label">accsept</label>
+  </div>
+  <button class="btn btn-primary" type="submit">send</button>
+</form>
 
      
   <script src="./jquery-3.7.1.slim.min.js"></script>
