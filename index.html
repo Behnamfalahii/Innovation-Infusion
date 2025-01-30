@@ -9,97 +9,83 @@
 <body>
 <!-- Nav tabs -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand">Dashbord</a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <div class="container">
+        <a href="#" class="navbar-brand">MyProduct</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">settings</a></li>
-            </ul>
-          </div>
-    </div>
 
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+            <li class="nav-item"><a href="#" class="nav-link btn btn-primary text-white px-3">Buy Now</a></li>
+         </ul>
+        </div>
+    </div>
 </nav>
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar py-3">
-            <div class="position-sticky">
-                <ul class="nav felx-column ">
-                    <li class="nav-item"><a href="#" class="nav-link  active">Dashbord</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link ">User</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link ">Order</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link ">Products</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link ">Reports</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- main content... -->
-         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <h1 class="mt-4">Dashboard</h1>
-         <!-- //// card body.../// -->
-          <div class="row my-4">
-            <div class="col-md-4">
-                <div class="card text-bg-primary text-white">
-                 <h5 class="card-title">Users</h5>
-                 <p class="card-text">1,200 Active Users</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-bg-success text-white">
-                 <h5 class="card-title">Revenue</h5>
-                 <p class="card-text">$45,000 this Month</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-bg-warning text-white">
-                 <h5 class="card-title">Order</h5>
-                 <p class="card-text">320 New orders</p>
-                </div>
-            </div>
-          </div>
-          <h2>Recent Orders</h2>
-          <table class="table table-striped">
-            <thead class="table-dark">
-              <tr>
-                <th>#</th>
-                <th>Customer</th>
-                <th>Product</th>
-                <th>Amount</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Jhn Doe</td>
-                    <td>Laptop</td>
-                    <td>$1200</td>
-                    <td><span class="badge bg-success">Completed</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Jane Smith</td>
-                    <td>Phone</td>
-                    <td>$800</td>
-                    <td><span class="badge bg-warning">Pending</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Mike Johnson</td>
-                    <td>Headphones</td>
-                    <td>$150</td>
-                    <td><span class="badge bg-danger">Cancelled</span></td>
-                </tr>
-            </tbody>
-          </table>
-         </main>
-    </div>
-</div>
 
+<!-- header section.... -->
+ <header class="bg-primary text-white text-center py-5">
+    <h1>Introducing Our Amazing Product</h1>
+    <p class="lead">The best solution for all your needs</p>
+    <a href="#" class="btn btn-light btn-lg">Get Started</a>
+ </header>
+
+ <!-- Main... -->
+<section class="container my-5">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card p-4 shadow">
+            <h3>🚀 Fast Performance</h3>
+            <p>Experience blazing fast speed and efficiency.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 shadow">
+            <h3>🎨 Modern Design</h3>
+            <p>Elegant UI with user-friendly experience.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 shadow">
+            <h3>🔒 Secure & Reliable</h3>
+            <p>Top-notch security to protect your data.</p>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Reviews section.... -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h2>What Our Customers Say</h2>
+        <div class="row my-4">
+            <div class="col-md-4">
+                <div class="card p-3 shadow">
+                    <p>"Absolutely love this product! Highly recommended!"</p>
+                    <h5>⭐️⭐️⭐️⭐️⭐️ - John Doe</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 shadow">
+                    <p>"Great value for the price. A game-changer!"</p>
+                    <h5>⭐️⭐️⭐️⭐️⭐️ - Jane Smith</h5>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 shadow">
+                    <p>"Easy to use and works like a charm!"</p>
+                    <h5>⭐️⭐️⭐️⭐️ - Mike Johnson</h5>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+<!-- footer... -->
+ <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 MyProduct. All rights reserved</p>
+ </footer>
 
 
     <!-- Bootstrap Scripts -->
